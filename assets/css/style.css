@@ -47,8 +47,10 @@ hr {
 
 nav {
     background-color: #003366;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 nav a {

@@ -128,3 +128,25 @@ footer {
     margin-top: 50px;
 }
 
+/* ========================= */
+/* MEMBERS PAGE */
+/* ========================= */
+
+.member-card {
+    background: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-left: 5px solid #003366;
+}
+
+.member-card h3 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.member-card p {
+    margin: 8px 0;
+    line-height: 1.6;
+}

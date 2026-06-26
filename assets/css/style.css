@@ -308,3 +308,30 @@ color:#003366;
 margin-bottom:15px;
 
 }
+/* ========================= */
+/* NEWS PAGE */
+/* ========================= */
+
+.news-card{
+
+background:white;
+
+padding:30px;
+
+margin-top:25px;
+
+border-radius:12px;
+
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+border-left:5px solid #003366;
+
+}
+
+.news-card h3{
+
+color:#003366;
+
+margin-bottom:15px;
+
+}

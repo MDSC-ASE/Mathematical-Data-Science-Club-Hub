@@ -280,58 +280,55 @@ img{
 
 }
 
-.card-container{
+/* ==========================================
+   Responsive Design
+========================================== */
 
-    max-width:1250px;
+/* Tablets */
+@media (max-width: 992px) {
 
-    margin:auto;
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
 
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:35px;
-
-}
-
-.card{
-
-    height:170px;
-
-    background:#fff;
-
-    border:2px solid #C62828;
-
-    border-radius:18px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    transition:.35s ease;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    .hero h1 {
+        font-size: 3rem;
+    }
 
 }
 
-.card h3{
+/* Phones */
+@media (max-width: 768px) {
 
-    color:#003B7A;
+    .navbar {
+        padding: 18px 6%;
+    }
 
-    font-size:2rem;
+    .nav-links {
+        gap: 18px;
+    }
 
-    letter-spacing:1px;
+    .hero h1 {
+        font-size: 2.3rem;
+    }
 
-}
+    .hero h2 {
+        font-size: 1.3rem;
+    }
 
-.card:hover{
+    .hero p {
+        font-size: 1rem;
+    }
 
-    transform:translateY(-8px);
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
-
-    background:#fafafa;
+    .card {
+        width: 100%;
+        height: 150px;
+    }
 
 }

@@ -236,3 +236,102 @@ img{
     letter-spacing:.5px;
 
 }
+/* ==========================================
+   Explore Section
+========================================== */
+
+.explore{
+
+    padding:90px 8%;
+
+    background:#ffffff;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:2.8rem;
+
+    color:#003B7A;
+
+    margin-bottom:15px;
+
+}
+
+.title-line{
+
+    width:70px;
+
+    height:4px;
+
+    background:#C62828;
+
+    margin:auto;
+
+    border-radius:5px;
+
+}
+
+.card-container{
+
+    max-width:1250px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.card{
+
+    height:170px;
+
+    background:#fff;
+
+    border:2px solid #C62828;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.card h3{
+
+    color:#003B7A;
+
+    font-size:2rem;
+
+    letter-spacing:1px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+    background:#fafafa;
+
+}

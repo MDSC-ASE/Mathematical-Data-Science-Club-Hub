@@ -6,16 +6,23 @@
 :root{
 
     --primary:#003B7A;
-    --accent:#C62828;
-    --white:#ffffff;
-    --light:#F8F9FA;
+    --secondary:#C62828;
+
     --text:#2C2C2C;
 
-    --radius:18px;
+    --light:#F8F9FA;
 
-    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --white:#FFFFFF;
+
+    --border:#E5E7EB;
+
+    --radius:16px;
+
+    --shadow:0 12px 30px rgba(0,0,0,.08);
 
     --transition:.35s ease;
+
+    --container:1200px;
 
 }
 

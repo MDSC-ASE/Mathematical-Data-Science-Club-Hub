@@ -1,1 +1,25 @@
+/* ===========================
+   MOBILE NAVBAR
+=========================== */
 
+@media (max-width:768px){
+
+    .navbar{
+
+        padding:0 25px;
+
+    }
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+}

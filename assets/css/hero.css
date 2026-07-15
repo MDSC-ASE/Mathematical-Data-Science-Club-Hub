@@ -1,1 +1,97 @@
+/* ===========================
+   HERO
+=========================== */
 
+.hero{
+
+    position:relative;
+
+    height:700px;
+
+    background-image:url("../images/hero/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+    max-width:900px;
+
+    padding:20px;
+
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    font-family:"Poppins",sans-serif;
+
+    margin-bottom:15px;
+
+}
+
+.hero h2{
+
+    font-size:2rem;
+
+    font-weight:600;
+
+}
+
+.hero-line{
+
+    width:140px;
+
+    height:4px;
+
+    background:#D62828;
+
+    margin:30px auto;
+
+}
+
+.hero p{
+
+    font-size:1.5rem;
+
+    line-height:1.7;
+
+    font-style:italic;
+
+    margin-bottom:35px;
+
+}
+
+.hero span{
+
+    font-size:1.3rem;
+
+}

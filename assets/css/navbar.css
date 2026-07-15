@@ -1,4 +1,6 @@
-/* ================= NAVBAR ================= */
+/* ===========================
+   NAVBAR
+=========================== */
 
 .navbar{
 
@@ -7,9 +9,10 @@
     left:0;
 
     width:100%;
+
     height:90px;
 
-    background:#fff;
+    background:#ffffff;
 
     display:flex;
     justify-content:space-between;
@@ -17,25 +20,29 @@
 
     padding:0 8%;
 
-    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
 
-    box-shadow:0 2px 15px rgba(0,0,0,.06);
+    z-index:1000;
 
 }
 
-/* ---------- Logo ---------- */
+/* ===========================
+   LOGO
+=========================== */
 
 .logo{
 
-    font-family:'Poppins',sans-serif;
-    font-size:2.2rem;
-    font-weight:700;
-
-    color:#12366f;
+    position:relative;
 
     text-decoration:none;
 
-    position:relative;
+    color:#0b2d67;
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    font-family:"Poppins",sans-serif;
 
     transition:.3s;
 
@@ -43,11 +50,11 @@
 
 .logo:hover{
 
-    color:#d62828;
+    color:#c61f26;
 
 }
 
-/* Ligne rouge sous MDS */
+/* red line under active page */
 
 .logo.active::after{
 
@@ -63,17 +70,20 @@
     width:42px;
     height:3px;
 
-    background:#d62828;
+    background:#c61f26;
 
-    border-radius:10px;
+    border-radius:5px;
 
 }
 
-/* ---------- Navigation ---------- */
+/* ===========================
+   LINKS
+=========================== */
 
 .nav-links{
 
     display:flex;
+
     gap:70px;
 
 }
@@ -84,11 +94,13 @@
 
     text-decoration:none;
 
-    color:#142850;
+    color:#16254a;
 
     font-size:1.2rem;
 
     font-weight:600;
+
+    font-family:"Poppins",sans-serif;
 
     transition:.3s;
 
@@ -96,11 +108,15 @@
 
 .nav-links a:hover{
 
-    color:#d62828;
+    color:#c61f26;
 
 }
 
-/* Ligne rouge page active */
+.nav-links a.active{
+
+    color:#c61f26;
+
+}
 
 .nav-links a.active::after{
 
@@ -116,21 +132,23 @@
     width:42px;
     height:3px;
 
-    background:#d62828;
+    background:#c61f26;
 
-    border-radius:10px;
+    border-radius:5px;
 
 }
 
-/* ---------- Mobile ---------- */
+/* ===========================
+   MOBILE BUTTON
+=========================== */
 
 .menu-toggle{
 
     display:none;
 
-    font-size:1.7rem;
+    font-size:1.8rem;
 
-    color:#12366f;
+    color:#16254a;
 
     cursor:pointer;
 

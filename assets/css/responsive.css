@@ -71,3 +71,40 @@ grid-template-columns:1fr;
 }
 
 }
+/* ===========================
+   FOOTER
+=========================== */
+
+@media (max-width:900px){
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
+
+    .footer-column{
+
+        border-right:none !important;
+
+        padding-right:0 !important;
+
+        justify-content:center;
+
+        text-align:center;
+
+        flex-direction:column;
+
+    }
+
+    .footer-column.copyright{
+
+        justify-content:center;
+
+        text-align:center;
+
+    }
+
+}

@@ -1,1 +1,109 @@
+/* ===========================
+   FOOTER
+=========================== */
 
+footer{
+
+    background:#ffffff;
+
+    border-top:1px solid #e5e5e5;
+
+    padding:35px 8%;
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 2fr 1.5fr 1.5fr;
+
+    gap:35px;
+
+    align-items:center;
+
+}
+
+.footer-column{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.footer-column:not(:last-child){
+
+    border-right:1px solid #d9d9d9;
+
+    padding-right:30px;
+
+}
+
+.footer-column i{
+
+    font-size:2rem;
+
+    color:#c62828;
+
+    min-width:35px;
+
+}
+
+.footer-column h4{
+
+    color:#0b2c5d;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:1.15rem;
+
+    margin-bottom:6px;
+
+}
+
+.footer-column p{
+
+    margin:0;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+.footer-column a{
+
+    color:#0b2c5d;
+
+    text-decoration:none;
+
+}
+
+.footer-column a:hover{
+
+    color:#c62828;
+
+}
+
+.footer-column.github i{
+
+    color:#0b2c5d;
+
+}
+
+.footer-column.copyright{
+
+    justify-content:flex-end;
+
+    text-align:right;
+
+}
+
+.footer-column.copyright p{
+
+    line-height:1.5;
+
+}

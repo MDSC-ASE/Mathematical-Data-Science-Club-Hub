@@ -39,18 +39,29 @@
     grid-template-columns:repeat(3,1fr);
 
     gap:40px;
+    align-items:stretch;
 
 }
 
 .club-card{
 
-    background:white;
+    background:#fff;
 
     border:2px solid #c62828;
 
     border-radius:15px;
 
-    padding:60px 30px;
+    padding:55px 30px;
+
+    min-height:260px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
 
     text-decoration:none;
 

@@ -4,51 +4,54 @@
 
 .explore{
 
-    padding:80px 7%;
+    padding:75px 7%;
+    background:#fff;
     text-align:center;
-    background:#ffffff;
 
 }
 
 .explore h2{
 
+    font-family:"Poppins", sans-serif;
     font-size:3rem;
     color:#003B7A;
-    font-family:"Poppins",sans-serif;
     margin-bottom:15px;
 
 }
 
 .section-line{
 
-    width:75px;
+    width:70px;
     height:4px;
     background:#C62828;
-    margin:0 auto 55px;
-    border-radius:50px;
+    margin:0 auto 50px;
+    border-radius:30px;
 
 }
 
-/* Cards */
+/* =========================
+   Cards
+========================= */
 
 .card-container{
 
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:36px;
+    gap:28px;
     flex-wrap:wrap;
 
 }
 
 .club-card{
 
-    width:360px;
-    height:190px;
+    width:330px;
+    height:170px;
 
     background:#fff;
 
-    border:2px solid #C62828;
+    border:2px solid #D62828;
+
     border-radius:14px;
 
     display:flex;
@@ -57,19 +60,22 @@
     align-items:center;
 
     text-decoration:none;
+
     color:#003B7A;
 
-    transition:all .35s ease;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 
-    box-shadow:0 8px 22px rgba(0,0,0,.08);
+    transition:.30s ease;
 
 }
 
 .club-card:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-5px);
 
-    box-shadow:0 16px 32px rgba(0,0,0,.12);
+    box-shadow:0 14px 28px rgba(0,0,0,.12);
+
+    border-color:#B71C1C;
 
 }
 
@@ -77,8 +83,9 @@
 
 .club-card i{
 
-    font-size:46px;
-    margin-bottom:18px;
+    font-size:42px;
+
+    margin-bottom:14px;
 
 }
 
@@ -86,10 +93,15 @@
 
 .club-card h3{
 
-    font-size:1.35rem;
+    font-family:"Poppins", sans-serif;
+
+    font-size:1.05rem;
+
     font-weight:700;
+
     letter-spacing:1px;
-    margin-bottom:16px;
+
+    margin-bottom:12px;
 
 }
 
@@ -97,9 +109,11 @@
 
 .club-card span{
 
-    font-size:1.7rem;
-    color:#C62828;
-    transition:.3s;
+    font-size:1.45rem;
+
+    color:#D62828;
+
+    transition:.30s;
 
 }
 

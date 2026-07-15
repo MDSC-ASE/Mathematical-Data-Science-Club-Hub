@@ -4,7 +4,143 @@
 
 .navbar{
 
+    position: fixed;/* ================= NAVBAR ================= */
+
+.navbar{
+
     position: fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:90px;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    z-index:1000;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.06);
+
+}
+
+/* ---------- Logo ---------- */
+
+.logo{
+
+    font-family:'Poppins',sans-serif;
+    font-size:2.2rem;
+    font-weight:700;
+
+    color:#12366f;
+
+    text-decoration:none;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.logo:hover{
+
+    color:#d62828;
+
+}
+
+/* Ligne rouge sous MDS */
+
+.logo.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    transform:translateX(-50%);
+
+    bottom:-18px;
+
+    width:42px;
+    height:3px;
+
+    background:#d62828;
+
+    border-radius:10px;
+
+}
+
+/* ---------- Navigation ---------- */
+
+.nav-links{
+
+    display:flex;
+    gap:70px;
+
+}
+
+.nav-links a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:#142850;
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#d62828;
+
+}
+
+/* Ligne rouge page active */
+
+.nav-links a.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    transform:translateX(-50%);
+
+    bottom:-18px;
+
+    width:42px;
+    height:3px;
+
+    background:#d62828;
+
+    border-radius:10px;
+
+}
+
+/* ---------- Mobile ---------- */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:1.7rem;
+
+    color:#12366f;
+
+    cursor:pointer;
+
+}
     top:0;
     left:0;
 

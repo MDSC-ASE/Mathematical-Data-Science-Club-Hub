@@ -182,7 +182,7 @@ GENERAL SECTION
 PRESIDENT
 ======================================================*/
 
-.president-container{
+.leader-container{
 
     max-width:1200px;
 
@@ -198,7 +198,7 @@ PRESIDENT
 
 }
 
-.president-photo img{
+.leader-photo img{
 
     width:100%;
 
@@ -208,7 +208,7 @@ PRESIDENT
 
 }
 
-.president-content h3{
+.leader-content h3{
 
     font-size:2.2rem;
 
@@ -216,7 +216,7 @@ PRESIDENT
 
 }
 
-.president-content h4{
+.leader-content h4{
 
     color:#C62828;
 
@@ -224,7 +224,7 @@ PRESIDENT
 
 }
 
-.president-content p{
+.leader-content p{
 
     color:#555;
 
@@ -234,7 +234,7 @@ PRESIDENT
 
 }
 
-.president-content h5{
+.leader-content h5{
 
     margin-top:25px;
 
@@ -276,7 +276,7 @@ INTEREST TAGS
 
 }
 
-.president-contact{
+.leader-contact{
 
     display:flex;
 
@@ -286,7 +286,7 @@ INTEREST TAGS
 
 }
 
-.president-contact i{
+.leader-contact i{
 
     color:#C62828;
 
@@ -294,7 +294,7 @@ INTEREST TAGS
 
 }
 
-.president-contact a{
+.leader-contact a{
 
     color:#003B7A;
 
@@ -302,7 +302,7 @@ INTEREST TAGS
 
 }
 
-.president-contact a:hover{
+.leader-contact a:hover{
 
     color:#C62828;
 

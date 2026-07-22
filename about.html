@@ -597,37 +597,68 @@
     </div>
 
 
-    <!-- ================= PARTNER CATEGORIES ================= -->
+    <!-- ================= PARTNER TABS ================= -->
 
-    <div class="partner-categories">
+    <div class="partner-tabs">
 
-        <a href="#private" class="partner-btn">
-            Private Institutions
-        </a>
+        <!-- Hidden radio buttons -->
 
-        <a href="#public" class="partner-btn">
-            Public Institutions
-        </a>
+        <input
+            type="radio"
+            name="partner-category"
+            id="private-tab"
+            checked>
 
-        <a href="#labs" class="partner-btn">
-            Labs
-        </a>
+        <input
+            type="radio"
+            name="partner-category"
+            id="public-tab">
 
-        <a href="#ngos" class="partner-btn">
-            NGOs
-        </a>
+        <input
+            type="radio"
+            name="partner-category"
+            id="labs-tab">
 
-    </div>
+        <input
+            type="radio"
+            name="partner-category"
+            id="ngos-tab">
 
 
-    <!-- ================= PARTNER LOGOS ================= -->
+        <!-- ================= BUTTONS ================= -->
 
-    <div class="partner-logos">
+        <div class="partner-categories">
+
+            <label
+                for="private-tab"
+                class="partner-btn">
+                Private Institutions
+            </label>
+
+            <label
+                for="public-tab"
+                class="partner-btn">
+                Public Institutions
+            </label>
+
+            <label
+                for="labs-tab"
+                class="partner-btn">
+                Labs
+            </label>
+
+            <label
+                for="ngos-tab"
+                class="partner-btn">
+                NGOs
+            </label>
+
+        </div>
 
 
         <!-- ================= PRIVATE INSTITUTIONS ================= -->
 
-        <div id="private" class="partner-group">
+        <div class="partner-group private-group">
 
             <h3>Private Institutions</h3>
 
@@ -656,7 +687,7 @@
 
         <!-- ================= PUBLIC INSTITUTIONS ================= -->
 
-        <div id="public" class="partner-group">
+        <div class="partner-group public-group">
 
             <h3>Public Institutions</h3>
 
@@ -671,7 +702,7 @@
 
         <!-- ================= LABS ================= -->
 
-        <div id="labs" class="partner-group">
+        <div class="partner-group labs-group">
 
             <h3>Labs</h3>
 
@@ -686,7 +717,7 @@
 
         <!-- ================= NGOs ================= -->
 
-        <div id="ngos" class="partner-group">
+        <div class="partner-group ngos-group">
 
             <h3>NGOs</h3>
 
@@ -697,7 +728,6 @@
             </div>
 
         </div>
-
 
     </div>
 

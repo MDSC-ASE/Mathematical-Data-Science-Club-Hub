@@ -1214,7 +1214,7 @@ MISSION
        PRESIDENT / LEADER
     ================================================== */
 
-    .leader-content {
+    .leader-container {
 
         display: flex;
 
@@ -1229,11 +1229,11 @@ MISSION
     }
 
 
-    /* ==================================================
-       PRESIDENT / LEADER IMAGE
-    ================================================== */
+    /* =========================
+       LEADER PHOTO
+    ========================= */
 
-    .leader-image {
+    .leader-photo {
 
         width: 100%;
 
@@ -1243,7 +1243,7 @@ MISSION
 
     }
 
-    .leader-image img {
+    .leader-photo img {
 
         width: 100%;
 
@@ -1256,11 +1256,11 @@ MISSION
     }
 
 
-    /* ==================================================
-       PRESIDENT / LEADER TEXT
-    ================================================== */
+    /* =========================
+       LEADER CONTENT
+    ========================= */
 
-    .leader-info {
+    .leader-content {
 
         width: 100%;
 
@@ -1274,7 +1274,7 @@ MISSION
 
     }
 
-    .leader-info h3 {
+    .leader-content h3 {
 
         font-size: 1.7rem;
 
@@ -1282,7 +1282,7 @@ MISSION
 
     }
 
-    .leader-info p {
+    .leader-content p {
 
         font-size: .95rem;
 
@@ -1293,17 +1293,40 @@ MISSION
     }
 
 
-    /* ==================================================
-       RESEARCH INTERESTS
-    ================================================== */
+    /* =========================
+       INTEREST TAGS
+    ========================= */
 
-    .research-interests {
+    .interest-tags {
 
         display: flex;
 
         flex-wrap: wrap;
 
         gap: 10px;
+
+    }
+
+
+    /* =========================
+       LEADER CONTACT
+    ========================= */
+
+    .leader-contact {
+
+        display: flex;
+
+        align-items: flex-start;
+
+        gap: 10px;
+
+        flex-wrap: wrap;
+
+    }
+
+    .leader-contact a {
+
+        word-break: break-word;
 
     }
 

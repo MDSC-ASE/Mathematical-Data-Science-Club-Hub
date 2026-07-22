@@ -867,18 +867,38 @@ MISSION
 
 }
 /* ======================================================
-   PARTNERS
+   PARTNERS TABS
 ====================================================== */
 
-/* Partner category buttons */
-
-.partner-categories {
+.partner-tabs {
 
     width: 100%;
 
     max-width: 1200px;
 
-    margin: 50px auto 60px;
+    margin: 50px auto 0;
+
+}
+
+
+/* ======================================================
+   HIDE RADIO BUTTONS
+====================================================== */
+
+.partner-tabs > input {
+
+    display: none;
+
+}
+
+
+/* ======================================================
+   PARTNER CATEGORY BUTTONS
+====================================================== */
+
+.partner-categories {
+
+    width: 100%;
 
     display: grid;
 
@@ -886,10 +906,10 @@ MISSION
 
     gap: 25px;
 
+    margin-bottom: 60px;
+
 }
 
-
-/* Partner buttons */
 
 .partner-btn {
 
@@ -919,14 +939,12 @@ MISSION
 
     text-align: center;
 
-    text-decoration: none;
+    cursor: pointer;
 
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 
 }
 
-
-/* Hover */
 
 .partner-btn:hover {
 
@@ -938,38 +956,21 @@ MISSION
 
     transform: translateY(-4px);
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
-
 }
 
 
 /* ======================================================
-   PARTNER LOGOS
+   PARTNER GROUPS
 ====================================================== */
-
-.partner-logos {
-
-    width: 100%;
-
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-}
-
-
-/* Individual category */
 
 .partner-group {
 
-    scroll-margin-top: 120px;
+    display: none;
 
-    padding: 50px 0;
+    animation: partnerFade .4s ease;
 
 }
 
-
-/* Category title */
 
 .partner-group h3 {
 
@@ -986,8 +987,6 @@ MISSION
 }
 
 
-/* Logos grid */
-
 .partner-logo-grid {
 
     display: grid;
@@ -996,12 +995,8 @@ MISSION
 
     gap: 30px;
 
-    align-items: center;
-
 }
 
-
-/* Individual logo card */
 
 .partner-logo {
 
@@ -1021,25 +1016,21 @@ MISSION
 
     align-items: center;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
 
-    transition: all 0.3s ease;
+    transition: .3s ease;
 
 }
 
-
-/* Logo hover */
 
 .partner-logo:hover {
 
     transform: translateY(-5px);
 
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 15px 30px rgba(0,0,0,.10);
 
 }
 
-
-/* Logo image */
 
 .partner-logo img {
 
@@ -1050,6 +1041,89 @@ MISSION
     max-height: 100px;
 
     object-fit: contain;
+
+}
+
+
+/* ======================================================
+   SHOW SELECTED CATEGORY
+====================================================== */
+
+/* Private Institutions */
+
+#private-tab:checked ~ .private-group {
+
+    display: block;
+
+}
+
+
+/* Public Institutions */
+
+#public-tab:checked ~ .public-group {
+
+    display: block;
+
+}
+
+
+/* Labs */
+
+#labs-tab:checked ~ .labs-group {
+
+    display: block;
+
+}
+
+
+/* NGOs */
+
+#ngos-tab:checked ~ .ngos-group {
+
+    display: block;
+
+}
+
+
+/* ======================================================
+   ACTIVE BUTTON
+====================================================== */
+
+#private-tab:checked ~ .partner-categories label[for="private-tab"],
+#public-tab:checked ~ .partner-categories label[for="public-tab"],
+#labs-tab:checked ~ .partner-categories label[for="labs-tab"],
+#ngos-tab:checked ~ .partner-categories label[for="ngos-tab"] {
+
+    background: #003B7A;
+
+    border-color: #003B7A;
+
+    color: #ffffff;
+
+}
+
+
+/* ======================================================
+   ANIMATION
+====================================================== */
+
+@keyframes partnerFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
 
 }
 
@@ -1067,7 +1141,6 @@ MISSION
         gap: 20px;
 
     }
-
 
     .partner-logo-grid {
 
@@ -1090,39 +1163,19 @@ MISSION
 
         gap: 15px;
 
-        margin-top: 35px;
-
     }
-
 
     .partner-btn {
 
         min-height: 60px;
 
-        font-size: 0.95rem;
+        font-size: .95rem;
 
     }
-
-
-    .partner-group {
-
-        padding: 35px 0;
-
-    }
-
 
     .partner-logo-grid {
 
         grid-template-columns: 1fr;
-
-        gap: 20px;
-
-    }
-
-
-    .partner-logo {
-
-        min-height: 130px;
 
     }
 

@@ -2,332 +2,176 @@
    NAVBAR
 =========================== */
 
-.navbar{
-
-    position: fixed;/* ================= NAVBAR ================= */
-
-.navbar{
+.navbar {
 
     position: fixed;
-    top:0;
-    left:0;
 
-    width:100%;
-    height:90px;
+    top: 0;
+    left: 0;
 
-    background:#fff;
+    width: 100%;
+    height: 90px;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    background: #ffffff;
 
-    padding:0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    z-index:1000;
+    padding: 0 8%;
 
-    box-shadow:0 2px 15px rgba(0,0,0,.06);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+
+    z-index: 1000;
 
 }
 
-/* ---------- Logo ---------- */
-.logo{
 
-    font-family: "Poppins", sans-serif;
-    font-size: 1.35rem;
-    font-weight: 700;
+/* ===========================
+   LOGO — MDS
+=========================== */
 
-    color: #003B7A;
-
-    text-decoration: none;
+.logo {
 
     position: relative;
 
-    transition: .3s ease;
+    text-decoration: none;
 
-    padding-bottom: 8px;
+    color: #003B7A;
+
+    font-size: 2.2rem;
+
+    font-weight: 700;
+
+    font-family: "Poppins", sans-serif;
+
+    transition: 0.3s;
 
 }
 
-/* Hover */
 
-.logo:hover{
+/* Logo hover */
+
+.logo:hover {
 
     color: #C62828;
 
 }
 
-/* Ligne rouge */
 
-.logo::after{
+/* Red line under active logo */
+
+.logo.active::after {
 
     content: "";
 
     position: absolute;
 
-    left: 0;
-    bottom: 0;
+    left: 50%;
 
-    width: 0;
+    transform: translateX(-50%);
+
+    bottom: -18px;
+
+    width: 42px;
+
     height: 3px;
 
     background: #C62828;
 
-    border-radius: 10px;
-
-    transition: .3s ease;
+    border-radius: 5px;
 
 }
 
-/* Actif */
 
-.logo.active::after{
+/* ===========================
+   NAVIGATION LINKS
+=========================== */
 
-    width: 100%;
+.nav-links {
+
+    display: flex;
+
+    gap: 70px;
 
 }
+
+
+.nav-links a {
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: #16254a;
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    font-family: "Poppins", sans-serif;
+
+    transition: 0.3s;
+
+}
+
 
 /* Hover */
 
-.logo:hover::after{
+.nav-links a:hover {
 
-    width: 100%;
-
-}
-
-/* Ligne rouge sous MDS */
-
-.logo.active::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:50%;
-    transform:translateX(-50%);
-
-    bottom:-18px;
-
-    width:42px;
-    height:3px;
-
-    background:#d62828;
-
-    border-radius:10px;
+    color: #C62828;
 
 }
 
-/* ---------- Navigation ---------- */
 
-.nav-links{
+/* Active link */
 
-    display:flex;
-    gap:70px;
+.nav-links a.active {
 
-}
-
-.nav-links a{
-
-    position:relative;
-
-    text-decoration:none;
-
-    color:#142850;
-
-    font-size:1.2rem;
-
-    font-weight:600;
-
-    transition:.3s;
+    color: #C62828;
 
 }
 
-.nav-links a:hover{
 
-    color:#d62828;
+/* Red line under active link */
 
-}
+.nav-links a.active::after {
 
-/* Ligne rouge page active */
+    content: "";
 
-.nav-links a.active::after{
+    position: absolute;
 
-    content:"";
+    left: 50%;
 
-    position:absolute;
+    transform: translateX(-50%);
 
-    left:50%;
-    transform:translateX(-50%);
+    bottom: -18px;
 
-    bottom:-18px;
+    width: 42px;
 
-    width:42px;
-    height:3px;
+    height: 3px;
 
-    background:#d62828;
+    background: #C62828;
 
-    border-radius:10px;
+    border-radius: 5px;
 
 }
 
-/* ---------- Mobile ---------- */
-
-.menu-toggle{
-
-    display:none;
-
-    font-size:1.7rem;
-
-    color:#12366f;
-
-    cursor:pointer;
-
-}
-    top:0;
-    left:0;
-
-    width:100%;
-
-    height:90px;
-
-    background:#ffffff;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:0 8%;
-
-    box-shadow:0 2px 15px rgba(0,0,0,.05);
-
-    z-index:1000;
-
-}
 
 /* ===========================
-   LOGO
+   MOBILE MENU CHECKBOX
 =========================== */
-
-.logo{
-
-    position:relative;
-
-    text-decoration:none;
-
-    color:#0b2d67;
-
-    font-size:2.2rem;
-
-    font-weight:700;
-
-    font-family:"Poppins",sans-serif;
-
-    transition:.3s;
-
-}
-
-.logo:hover{
-
-    color:#c61f26;
-
-}
-
-/* red line under active page */
-
-.logo.active::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:50%;
-    transform:translateX(-50%);
-
-    bottom:-18px;
-
-    width:42px;
-    height:3px;
-
-    background:#c61f26;
-
-    border-radius:5px;
-
-}
-
-/* ===========================
-   LINKS
-=========================== */
-
-.nav-links{
-
-    display:flex;
-
-    gap:70px;
-
-}
-
-.nav-links a{
-
-    position:relative;
-
-    text-decoration:none;
-
-    color:#16254a;
-
-    font-size:1.2rem;
-
-    font-weight:600;
-
-    font-family:"Poppins",sans-serif;
-
-    transition:.3s;
-
-}
-
-.nav-links a:hover{
-
-    color:#c61f26;
-
-}
-
-.nav-links a.active{
-
-    color:#c61f26;
-
-}
-
-.nav-links a.active::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:50%;
-    transform:translateX(-50%);
-
-    bottom:-18px;
-
-    width:42px;
-    height:3px;
-
-    background:#c61f26;
-
-    border-radius:5px;
-
-}
-
-/* ===========================
-   MOBILE MENU
-=========================== */
-
-/* Hide checkbox */
 
 .menu-checkbox {
+
     display: none;
+
 }
 
 
 /* ===========================
-   MOBILE BUTTON
+   MOBILE HAMBURGER BUTTON
 =========================== */
 
 .menu-toggle {
@@ -351,14 +195,36 @@
 
 @media (max-width: 768px) {
 
+
+    /* Navbar */
+
     .navbar {
 
-        position: relative;
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 75px;
+
+        padding: 0 7%;
 
     }
 
 
-    /* Show hamburger */
+    /* MDS Logo */
+
+    .logo {
+
+        font-size: 1.8rem;
+
+    }
+
+
+    /* Hamburger */
 
     .menu-toggle {
 
@@ -367,7 +233,7 @@
     }
 
 
-    /* Hide navigation by default */
+    /* Hide menu by default */
 
     .nav-links {
 
@@ -375,7 +241,7 @@
 
         position: absolute;
 
-        top: 100%;
+        top: 75px;
 
         left: 0;
 
@@ -387,7 +253,9 @@
 
         align-items: center;
 
-        padding: 20px 0;
+        gap: 0;
+
+        padding: 15px 0;
 
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 
@@ -410,11 +278,7 @@
 
         color: #003B7A;
 
-        text-decoration: none;
-
         font-size: 1.1rem;
-
-        font-weight: 600;
 
     }
 
@@ -430,9 +294,16 @@
     }
 
 
-    /* ===========================
-       OPEN MENU
-    =========================== */
+    /* Active link */
+
+    .nav-links a.active {
+
+        color: #C62828;
+
+    }
+
+
+    /* Open menu */
 
     .menu-checkbox:checked ~ .nav-links {
 

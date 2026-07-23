@@ -1,109 +1,537 @@
+<!-- ================= RESEARCH PAGE ================= -->
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <title>Research - MDSC ASE</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Research | MDS</title>
+
+
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Main CSS -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/navbar.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/research.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/footer.css">
+
+    <link
+        rel="stylesheet"
+        href="assets/css/responsive.css">
+
 </head>
+
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="members.html">Members</a>
-    <a href="projects.html">Projects</a>
-    <a href="research.html">Research</a>
-    <a href="resources.html">Resources</a>
-    <a href="events.html">Events</a>
-    <a href="news.html">News</a>
-    <a href="fundraising.html">Fundraising</a>
-    <a href="partners.html">Partners</a>
-    <a href="contact.html">Contact</a>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <!-- MDS = Home -->
+
+    <a
+        href="index.html"
+        class="logo">
+
+        MDS
+
+    </a>
+
+
+    <!-- Mobile menu checkbox -->
+
+    <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-checkbox">
+
+
+    <!-- Hamburger button -->
+
+    <label
+        for="menu-toggle"
+        class="menu-toggle">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </label>
+
+
+    <!-- Main navigation -->
+
+    <div class="nav-links">
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a
+            href="research.html"
+            class="active">
+
+            Research
+
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
 </nav>
 
-<section>
 
-    <h1>Research</h1>
+<!-- ================= RESEARCH SUBNAV ================= -->
 
-    <p>
-        Research is one of the core pillars of the ASE Mathematical Data Science Club (MDSC-ASE).
-        We encourage members to explore real-world problems through data-driven analysis,
-        quantitative methods and interdisciplinary collaboration.
-    </p>
+<nav class="research-subnav">
 
-</section>
+    <a href="#research-areas">
+        Research Areas
+    </a>
 
-<section>
+    <a href="#current-researchers">
+        Current Researchers
+    </a>
 
-    <h2>Research Areas</h2>
+    <a href="#publications">
+        Publications
+    </a>
+
+    <a href="#open-data">
+        Open Data
+    </a>
+
+</nav>
+
+
+<main>
+
+
+<!-- ================= RESEARCH AREAS ================= -->
+
+<section
+    id="research-areas"
+    class="research-section">
+
+    <div class="section-header">
+
+        <span>01</span>
+
+        <h2>
+            Research Areas
+        </h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
 
     <div class="research-grid">
 
-        <div class="research-card">
-            <h3>Data Science</h3>
-            <p>Data analysis, visualization, predictive modeling and machine learning.</p>
-        </div>
 
         <div class="research-card">
-            <h3>Statistics</h3>
-            <p>Statistical inference, experimental design and applied statistics.</p>
+
+            <i class="fa-solid fa-calculator"></i>
+
+            <h3>
+                Mathematics
+            </h3>
+
+            <p>
+                Research activities in mathematical methods
+                and quantitative approaches.
+            </p>
+
         </div>
 
-        <div class="research-card">
-            <h3>Artificial Intelligence</h3>
-            <p>Machine learning, deep learning and intelligent systems.</p>
-        </div>
 
         <div class="research-card">
-            <h3>Econometrics</h3>
-            <p>Quantitative analysis of economic and social phenomena.</p>
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <h3>
+                Statistics
+            </h3>
+
+            <p>
+                Statistical methods, modelling and
+                data analysis.
+            </p>
+
         </div>
 
-        <div class="research-card">
-            <h3>Mathematical Modeling</h3>
-            <p>Using mathematical tools to understand and solve real-world problems.</p>
-        </div>
 
         <div class="research-card">
-            <h3>Public Policy & Development</h3>
-            <p>Applying data science and statistics to development challenges.</p>
+
+            <i class="fa-solid fa-database"></i>
+
+            <h3>
+                Data Science
+            </h3>
+
+            <p>
+                Data-driven methods, computational analysis
+                and applied research.
+            </p>
+
         </div>
+
+
+        <div class="research-card">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>
+                Econometrics
+            </h3>
+
+            <p>
+                Quantitative methods for economic
+                and financial research.
+            </p>
+
+        </div>
+
 
     </div>
 
 </section>
 
-<section>
 
-    <h2>Current Status</h2>
+<!-- ================= CURRENT RESEARCHERS ================= -->
 
-    <p>
-        The club is currently building its research capacity through training,
-        collaborative learning and skill development. Research projects and publications
-        will be added as they become available.
-    </p>
+<section
+    id="current-researchers"
+    class="research-section alt-section">
+
+    <div class="section-header">
+
+        <span>02</span>
+
+        <h2>
+            Current Researchers
+        </h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+
+    <div class="researchers-grid">
+
+
+        <!-- Researcher 1 -->
+
+        <div class="researcher-card">
+
+            <div class="researcher-icon">
+
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+            <h3>
+                Researcher Name
+            </h3>
+
+            <p>
+                Research interests and academic profile.
+            </p>
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener">
+
+                Google Site
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+        <!-- Researcher 2 -->
+
+        <div class="researcher-card">
+
+            <div class="researcher-icon">
+
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+            <h3>
+                Researcher Name
+            </h3>
+
+            <p>
+                Research interests and academic profile.
+            </p>
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener">
+
+                Google Site
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+        <!-- Researcher 3 -->
+
+        <div class="researcher-card">
+
+            <div class="researcher-icon">
+
+                <i class="fa-solid fa-user"></i>
+
+            </div>
+
+            <h3>
+                Researcher Name
+            </h3>
+
+            <p>
+                Research interests and academic profile.
+            </p>
+
+            <a
+                href="#"
+                target="_blank"
+                rel="noopener">
+
+                Google Site
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+    </div>
 
 </section>
 
-<section>
 
-    <h2>Future Research Projects</h2>
+<!-- ================= PUBLICATIONS ================= -->
 
-    <ul>
-        <li>Conflict and Security Analysis using ACLED Data.</li>
-        <li>Economic Development and Data Analytics.</li>
-        <li>Machine Learning Applications in Social Sciences.</li>
-        <li>Public Health and Biostatistics Research.</li>
-        <li>Artificial Intelligence for Development.</li>
-    </ul>
+<section
+    id="publications"
+    class="research-section">
+
+    <div class="section-header">
+
+        <span>03</span>
+
+        <h2>
+            Publications
+        </h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+
+    <div class="publications-grid">
+
+
+        <div class="publication-card">
+
+            <div class="publication-icon">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+            </div>
+
+            <h3>
+                Publication Title
+            </h3>
+
+            <p>
+                Authors · Year
+            </p>
+
+            <a href="#">
+
+                Read Publication
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="publication-card">
+
+            <div class="publication-icon">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+            </div>
+
+            <h3>
+                Publication Title
+            </h3>
+
+            <p>
+                Authors · Year
+            </p>
+
+            <a href="#">
+
+                Read Publication
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+    </div>
 
 </section>
 
-<footer>
-    <p>© 2026 ASE Mathematical Data Science Club</p>
+
+<!-- ================= OPEN DATA ================= -->
+
+<section
+    id="open-data"
+    class="research-section alt-section">
+
+    <div class="section-header">
+
+        <span>04</span>
+
+        <h2>
+            Open Data
+        </h2>
+
+        <div class="section-line"></div>
+
+    </div>
+
+
+    <div class="open-data-grid">
+
+
+        <div class="data-card">
+
+            <div class="data-icon">
+
+                <i class="fa-solid fa-database"></i>
+
+            </div>
+
+            <h3>
+                Dataset Name
+            </h3>
+
+            <p>
+                Description of the open dataset
+                and its research relevance.
+            </p>
+
+            <a href="#">
+
+                Access Data
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="data-card">
+
+            <div class="data-icon">
+
+                <i class="fa-solid fa-database"></i>
+
+            </div>
+
+            <h3>
+                Dataset Name
+            </h3>
+
+            <p>
+                Description of the open dataset
+                and its research relevance.
+            </p>
+
+            <a href="#">
+
+                Access Data
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <!-- Keep your existing footer here -->
+
 </footer>
 
+
 </body>
+
 </html>

@@ -40,7 +40,9 @@
 }
 
 
-/* Subnav links */
+/* =========================
+   SUBNAV LINKS
+========================= */
 
 .research-subnav a {
 
@@ -63,8 +65,6 @@
 }
 
 
-/* Hover */
-
 .research-subnav a:hover {
 
     color: #C62828;
@@ -72,7 +72,7 @@
 }
 
 
-/* Active / current section */
+/* Active link */
 
 .research-subnav a.active {
 
@@ -81,7 +81,7 @@
 }
 
 
-/* Red line */
+/* Red line under active link */
 
 .research-subnav a.active::after {
 
@@ -721,77 +721,33 @@
 @media (max-width: 768px) {
 
 
-    /* =========================
-       RESEARCH SUBNAV
-    ========================= */
+    /* ==================================================
+       HIDE RESEARCH SUBNAVIGATION
+    ================================================== */
 
     .research-subnav {
 
-        position: sticky;
-
-        top: 75px;
-
-        width: 100%;
-
-        display: grid;
-
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 0;
-
-        padding: 0;
-
-        min-height: auto;
+        display: none;
 
     }
 
 
-    .research-subnav a {
-
-        display: flex;
-
-        justify-content: center;
-
-        align-items: center;
-
-        min-height: 55px;
-
-        padding: 10px 8px;
-
-        font-size: 0.8rem;
-
-        text-align: center;
-
-        border-right: 1px solid #E5E7EB;
-
-        border-bottom: 1px solid #E5E7EB;
-
-        white-space: normal;
-
-    }
-
-
-    .research-subnav a.active::after {
-
-        bottom: 4px;
-
-        width: 30px;
-
-    }
-
-
-    /* =========================
+    /* ==================================================
        SECTIONS
-    ========================= */
+    ================================================== */
 
     .research-section {
 
         padding: 65px 6%;
 
-        scroll-margin-top: 145px;
+        scroll-margin-top: 90px;
 
     }
 
+
+    /* ==================================================
+       SECTION HEADER
+    ================================================== */
 
     .section-header {
 
@@ -809,9 +765,9 @@
     }
 
 
-    /* =========================
+    /* ==================================================
        RESEARCH AREAS
-    ========================= */
+    ================================================== */
 
     .research-grid {
 
@@ -829,9 +785,9 @@
     }
 
 
-    /* =========================
+    /* ==================================================
        CURRENT RESEARCHERS
-    ========================= */
+    ================================================== */
 
     .researchers-grid {
 
@@ -842,9 +798,9 @@
     }
 
 
-    /* =========================
+    /* ==================================================
        PUBLICATIONS
-    ========================= */
+    ================================================== */
 
     .publications-grid {
 
@@ -855,9 +811,9 @@
     }
 
 
-    /* =========================
+    /* ==================================================
        OPEN DATA
-    ========================= */
+    ================================================== */
 
     .open-data-grid {
 
